@@ -1,0 +1,75 @@
+/* NAVBAR CONTAINER */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: linear-gradient(90deg, #3b82f6, #9333ea);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    border-radius: 0 0 25px 25px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    animation: fadeInNav 1s ease;
+}
+
+/* LINKS */
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* ACTIVE LINK */
+.link.active {
+    background: rgba(255,255,255,0.4);
+    color: #fff;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+/* GREETING */
+.nav-greeting {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    animation: fadeIn 1.2s ease forwards;
+}
+
+/* ANIMATIONS */
+@keyframes fadeInNav {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.logout-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-right: 10px;
+}
+.logout-btn:hover { background: #c0392b; }

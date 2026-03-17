@@ -1,0 +1,78 @@
+.details-card {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  font-family: Arial, sans-serif;
+}
+
+.section-title {
+  margin: 25px 0 15px;
+  color: #1E90FF;
+  font-size: 22px;
+  border-right: 4px solid #1E90FF;
+  padding-right: 10px;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+label {
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bcd4ff;
+  border-radius: 8px;
+  background: #f6faff;
+  font-size: 15px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #1E90FF;
+}
+
+.actions {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.allow-btn,
+.reject-btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.allow-btn {
+  background: #1E90FF;
+  color: white;
+}
+
+.allow-btn:hover {
+  background: #1c7ad6;
+}
+
+.reject-btn {
+  background: #ff4d4d;
+  color: white;
+}
+
+.reject-btn:hover {
+  background: #d93636;
+}

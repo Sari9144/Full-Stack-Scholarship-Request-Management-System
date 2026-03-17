@@ -1,0 +1,69 @@
+.verify-card {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  font-family: Arial, sans-serif;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 17px;
+  margin-bottom: 25px;
+}
+
+.checkbox-row input {
+  width: 20px;
+  height: 20px;
+}
+
+.verify-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.cancel-btn,
+.continue-btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.cancel-btn {
+  background: #ff4d4d;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background: #d93636;
+}
+
+.continue-btn {
+  background: #1E90FF;
+  color: white;
+}
+
+.continue-btn:hover {
+  background: #1c7ad6;
+}
+
+.continue-btn.disabled,
+.continue-btn:disabled {
+  background: #a7c8f8;
+  cursor: not-allowed;
+}
+
+.verify-section { margin-bottom: 16px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+.verify-section h4 { margin-bottom: 8px; color: #333; }
+.verify-row { display: flex; justify-content: space-between; margin: 4px 0; font-size: 0.95rem; }
+.verify-label { font-weight: 600; color: #555; }
+.verify-value { color: #222; }
+.verify-value.missing { color: #e74c3c; font-weight: bold; }
