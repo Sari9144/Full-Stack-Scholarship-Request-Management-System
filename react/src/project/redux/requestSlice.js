@@ -67,6 +67,13 @@ const requestSlice = createSlice({
                 const i = state.requestList.findIndex(r => r._id === action.payload._id)
                 if (i !== -1) state.requestList[i].status = 'reject'
             })
+            
+            
+
+            .addCase(fetchDraft.pending, (state) => {
+    state.loading = true;
+    state.current = { ...emptyForms }; // ניקוי הנתונים הקודמים כדי שלא יוצגו בזמן הטעינה
+})
             .addMatcher(a => a.type.endsWith('/pending'),   state => { state.loading = true })
             .addMatcher(a => a.type.endsWith('/rejected'),  (state, action) => { state.loading = false; state.error = action.error.message })
             .addMatcher(a => a.type.endsWith('/fulfilled'), state => { state.loading = false })
